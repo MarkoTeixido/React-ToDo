@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
-import { TodoItem } from './TodoItem';
-import { TodoCounter } from './TodoCounter';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
-import { TodoButtonCreate } from './TodoButtonCreate';
+import '../styles';
+import { TodoItem } from '../components/TodoItem';
+import { TodoCounter } from '../components/TodoCounter';
+import { TodoSearch } from '../components/TodoSearch';
+import { TodoList } from '../components/TodoList';
+import { TodoButtonCreate } from '../components/TodoButtonCreate';
 
 
 const Todos = [{text:'primer tarea', completed: false}];
