@@ -15,8 +15,7 @@
 /* Components - General */
 
 @import url(./components/App.css);
-@import url(./components/);
-@import url(./components/);
+@import url(./components/TodoCounter.css);
 
 
 /* Components - General end */

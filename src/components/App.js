@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles';
+import '../styles/index.css';
 import { TodoItem } from '../components/TodoItem';
 import { TodoCounter } from '../components/TodoCounter';
 import { TodoSearch } from '../components/TodoSearch';
@@ -12,19 +12,20 @@ const Todos = [{text:'primer tarea', completed: false}];
 function App() {
   return (
     <React.Fragment>
+      <section className="todoApp">
+        <TodoCounter classname = "todoCounter" total={12} completed={25}/>
+        <TodoSearch/>
 
-      <TodoCounter total={12} completed={25}/>
-      <TodoSearch/>
-
-      <TodoList>
-        {Todos.map(Todos => (
-          <TodoItem  
-            text = {Todos.text}
-            completed = {Todos.completed}
-          />))}
-      </TodoList>
-      
-      <TodoButtonCreate/>
+        <TodoList>
+          {Todos.map(Todos => (
+            <TodoItem  
+              text = {Todos.text}
+              completed = {Todos.completed}
+            />))}
+        </TodoList>
+        
+        <TodoButtonCreate/>
+      </section>
       
     </React.Fragment>
   );
