@@ -1,0 +1,13 @@
+.todoCounter_title{
+    font-family: var(--primary-font);
+    font-size: var(--font-display);
+    background-color: coral;
+    text-align: center;
+}
+
+.todoCounter_tasks-info{
+    font-family: var(--secondary-font);
+    font-size: var(--font-jumbo);
+    background-color: deeppink;
+    text-align: center;
+}
