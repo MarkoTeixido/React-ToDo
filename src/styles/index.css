@@ -1,13 +1,22 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* Resources */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Plus+Jakarta+Sans:wght@200;300;400&family=Sen:wght@400;500&display=swap');
+
+/* Resources end */
+
+/* Base */
+
+@import url(./base/variables.css);
+@import url(./base/normalize.css);
+@import url(./base/useful.css);
+
+/* Base end */
+
+/* Components - General */
+
+@import url(./components/App.css);
+@import url(./components/);
+@import url(./components/);
+
+
+/* Components - General end */

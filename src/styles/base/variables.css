@@ -1,0 +1,52 @@
+:root{
+    /* Color palette */
+    --primary-solid: #FFFFFF;
+    --primary-900: rgba(255, 255, 255, 0.9);
+    --primary-500: rgba(255, 255, 255, 0.5);
+    --primary-300: rgba(255, 255, 255, 0.3);
+
+    --secondary-solid: #000000;
+    --secondary-900: rgba(0, 0, 0, 0.9);
+    --secondary-500: rgba(0, 0, 0, 0.5);
+    --secondary-300: rgba(0, 0, 0, 0.3);
+
+    --dark-solid: #1f1f1f;
+    --dark-900: rgba(31, 31, 31, 0.9);
+    --dark-500: rgba(31, 31, 31, 0.5);
+    --dark-300: rgba(31, 31, 31, 0.3);
+
+    --dark-background-solid: #30343F;
+    --light-background-solid: #FAFAFF;
+
+    /* Color Font */
+    --light-font-solid: #FFFFFF;
+
+    /* Typography */
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Plus Jakarta Sans', sans-serif;
+    --ter-font: 'Sen', sans-serif;
+
+    /* Font Sizes */
+    /* Agregar 'font-size = 62.5%' en el tag 'html' */
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium-l: 2em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.4em;
+    --font-xsmall-super: 1.2em;
+
+    /* Spacings */
+    --spacing-126: 12.6rem;
+    --spacing-64: 6.4rem;
+    --spacing-32: 3.2rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+    --spacing-4: 0.4rem;
+}
