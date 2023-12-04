@@ -2,4 +2,8 @@
     width: 20%;
     align-self: center;
     padding: var(--spacing-8);
+    border-radius: .5rem;
+    
+    box-shadow: 4px 4px 0 #000;
+    transform: translate(-4px,-4px);
 }
