@@ -11,3 +11,7 @@
     background-color: deeppink;
     text-align: center;
 }
+
+.todoCounter_tasks-info span{
+    font-weight: 400;
+}
