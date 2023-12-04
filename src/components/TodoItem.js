@@ -1,6 +1,6 @@
 function TodoItem(props){
     return (
-        <li>
+        <li className="todoItem_item">
             <span>V</span>
             <p>{props.text}</p>
             <span>X</span>

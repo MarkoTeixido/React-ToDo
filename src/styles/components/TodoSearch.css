@@ -1,4 +1,5 @@
 .todoSearch_input{
     width: 20%;
     align-self: center;
+    padding: var(--spacing-8);
 }
