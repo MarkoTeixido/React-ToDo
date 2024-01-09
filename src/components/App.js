@@ -12,7 +12,7 @@ const Todos = [{text:'primer tarea', completed: false}];
 function App() {
   return (
     <React.Fragment>
-      <section className="todoApp">
+      <section className="max-w-xl bg-orange-400 flex flex-col items-center justify-center">
         <TodoCounter classname = "todoCounter" total={12} completed={25}/>
         <TodoSearch/>
 
