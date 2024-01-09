@@ -10,6 +10,7 @@ import { TodoButtonCreate } from '../components/TodoButtonCreate';
 const Todos = [{text:'primer tarea', completed: false}];
 
 function App() {
+  document.body.classList.add('bg-zinc-900');
   return (
     <React.Fragment>
       <section className="max-w-xl bg-orange-400 flex flex-col items-center justify-center">
