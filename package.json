@@ -4,6 +4,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "css-select": "^5.1.0",
+    "lucide-react": "^0.309.0",
     "nth-check": "^2.1.1",
     "postcss": "^8.4.33",
     "react": "^18",
