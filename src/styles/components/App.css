@@ -1,7 +1,0 @@
-.todoApp{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: var(--spacing-16);
-  background-color: lightskyblue;
-}
