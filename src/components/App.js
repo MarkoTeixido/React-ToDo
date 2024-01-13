@@ -14,7 +14,7 @@ function App() {
   return (
     <React.Fragment>
       <section className="max-w-xl text-neutral-200 mx-auto mt-auto flex flex-col justify-center h-screen">
-        <div className='max-w-full flex flex-col gap-8 p-4 border rounded-md'>
+        <div className='max-w-full flex flex-col gap-8 p-4 border rounded-md mx-2.5'>
           <TodoCounter classname = "todoCounter" total={12} completed={25}/>
           <TodoSearch/>
 
