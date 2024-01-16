@@ -7,7 +7,11 @@ import { TodoList } from '../components/TodoList';
 import { TodoButtonCreate } from '../components/TodoButtonCreate';
 
 
-const Todos = [{text:'primer tarea', completed: false}];
+const Todos = [
+  {text:'primer tarea', completed: false},
+  {text:'segunda tarea', completed: true},
+  {text:'tercer tarea', completed: false}
+];
 
 function App() {
   const [todos, setTodos] = useState(Todos);
