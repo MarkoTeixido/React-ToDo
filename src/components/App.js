@@ -17,13 +17,6 @@ function App() {
   const [todos, setTodos] = useState(Todos);
   const [searchValue, setSearchValue] = useState('');
 
-  const handleToggle = (updatedTodo) => {
-    const updatedTodos = todos.map(todo =>
-      todo.text === updatedTodo.text ? updatedTodo : todo
-    );
-    setTodos(updatedTodos);
-  };
-
   const searchedTodos = todos.filter(
     (todo) => {
       const todoText = todo.text.toLowerCase();
@@ -31,6 +24,25 @@ function App() {
       return todoText.includes(searchText);
     }
   );
+
+  const completeTodo = (text) => {
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo) => todo.text === text
+    );
+    newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
+    setTodos(newTodos);
+  };
+
+  const deleteTodo = (text) => {
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo) => todo.text === text
+    );
+    newTodos.splice(todoIndex, 1);
+    setTodos(newTodos);
+  };
+
   return (
     <React.Fragment>
       <section className="max-w-xl text-neutral-200 mx-auto mt-auto flex flex-col justify-center h-screen">
@@ -40,10 +52,12 @@ function App() {
 
           <TodoList>
             {searchedTodos.map(Todos => (
-              <TodoItem  
+              <TodoItem
+                key = {Todos.text}  
                 text = {Todos.text}
                 completed = {Todos.completed}
-                onToggle={handleToggle}
+                onComplete = {() => completeTodo(Todos.text)}
+                onDelete = {() => deleteTodo(Todos.text)}
               />))}
           </TodoList>
           
