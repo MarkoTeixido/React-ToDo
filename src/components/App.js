@@ -15,6 +15,7 @@ const Todos = [
 
 function App() {
   const [todos, setTodos] = useState(Todos);
+  const [searchValue, setSearchValue] = useState('');
 
   const handleToggle = (updatedTodo) => {
     const updatedTodos = todos.map(todo =>
@@ -22,15 +23,23 @@ function App() {
     );
     setTodos(updatedTodos);
   };
+
+  const searchedTodos = todos.filter(
+    (todo) => {
+      const todoText = todo.text.toLowerCase();
+      const searchText = searchValue.toLowerCase();
+      return todoText.includes(searchText);
+    }
+  );
   return (
     <React.Fragment>
       <section className="max-w-xl text-neutral-200 mx-auto mt-auto flex flex-col justify-center h-screen">
         <div className='max-w-full flex flex-col gap-8 p-4 border rounded-md mx-2.5'>
           <TodoCounter classname = "todoCounter" total={todos.length} completed={todos.filter(todo => todo.completed).length}/>
-          <TodoSearch/>
+          <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue}/>
 
           <TodoList>
-            {Todos.map(Todos => (
+            {searchedTodos.map(Todos => (
               <TodoItem  
                 text = {Todos.text}
                 completed = {Todos.completed}
