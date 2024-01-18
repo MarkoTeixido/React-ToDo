@@ -10,8 +10,13 @@ function TodoForm() {
     
     const onSubmit = (event) => {
         event.preventDefault();
-        addTodo(newTodoValue);
-        setOpenModal(false);
+
+        if(newTodoValue.length === 0){
+            alert("No se puede agregar una tarea vacia");
+        }else{
+            addTodo(newTodoValue);
+            setOpenModal(false);
+        }
     };
     
     const onCancel = () => {
