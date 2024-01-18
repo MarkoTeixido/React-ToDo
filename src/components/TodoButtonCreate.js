@@ -1,6 +1,12 @@
 import { Plus } from 'lucide-react';
+import { useContext } from 'react';
+import { TodoContext } from '../context/TodoContext';
 
-function TodoButtonCreate({ setOpenModal }) {
+function TodoButtonCreate() {
+  const{
+    setOpenModal
+  } = useContext(TodoContext);
+   
   return (
     <button className='w-full bg-neutral-100 hover:bg-neutral-200 rounded-md flex justify-center self-center' onClick={
       () => {
