@@ -14,7 +14,12 @@ import { useLocalStorage } from '../../hooks/useLocalStorage';
 
 function App() {
 
-  const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
+  const {
+    item: todos, 
+    saveitem: saveTodos,
+    loading,
+    error,
+  } = useLocalStorage('TODOS_V1', []);
   const [searchValue, setSearchValue] = useState('');
 
   const searchedTodos = todos.filter(
@@ -45,6 +50,8 @@ function App() {
 
   return (
     <AppUI 
+      loading={loading}
+      error={error}
       todos={todos}
       searchValue={searchValue}
       setSearchValue={setSearchValue}

@@ -2,10 +2,15 @@ import React from 'react';
 import { TodoItem } from '../TodoItem';
 import { TodoCounter } from '../TodoCounter';
 import { TodoSearch } from '../TodoSearch';
+import { TodoLoading } from '../TodoLoading';
+import { TodoError } from '../TodoError';
+import { TodoEmpty } from '../TodoEmpty';
 import { TodoList } from '../TodoList';
 import { TodoButtonCreate } from '../TodoButtonCreate';
 
 function AppUI({
+    loading,
+    error,
     todos,
     searchValue,
     setSearchValue,
@@ -21,6 +26,16 @@ function AppUI({
               <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue}/>
     
               <TodoList>
+                {loading && (
+                  <>
+                    <TodoLoading />
+                    <TodoLoading />
+                    <TodoLoading />
+                  </>
+                )}
+                {error && <TodoError/>}
+                {(!loading && searchedTodos.length === 0) && <TodoEmpty />}
+
                 {searchedTodos.map(Todos => (
                   <TodoItem
                     key = {Todos.text}  
