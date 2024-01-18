@@ -23,7 +23,7 @@ function TodoForm() {
     };
     
     return (
-        <form onSubmit={onSubmit} className='w-3/12 h-1/4 flex flex-col items-center justify-center gap-4 p-4 border rounded-md bg-neutral-50'>
+        <form onSubmit={onSubmit} className='md:w-3/12 md:h-1/4 flex flex-col items-center justify-center gap-4 p-4 border rounded-md bg-neutral-50'>
             <label className='z-10 text-center text-lg font-medium'>Crear Una Nueva Tarea</label>
             <textarea className='px-1 border-2 rounded-sm border-neutral-400' placeholder='Ingrese la tarea' onChange={onChange} required></textarea>
             <div className='flex gap-4 p-0'>
