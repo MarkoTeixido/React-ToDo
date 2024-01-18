@@ -29,8 +29,6 @@ function AppUI({
                 {loading && (
                   <>
                     <TodoLoading />
-                    <TodoLoading />
-                    <TodoLoading />
                   </>
                 )}
                 {error && <TodoError/>}
