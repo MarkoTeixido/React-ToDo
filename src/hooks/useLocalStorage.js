@@ -44,3 +44,13 @@ function useLocalStorage(itemName, initialValue) {
 }
 
 export { useLocalStorage };
+
+
+// const Todos = [
+//   {text:'primer tarea', completed: false},
+//   {text:'segunda tarea', completed: true},
+//   {text:'tercer tarea', completed: false}
+// ];
+
+// localStorage.setItem('TODOS_V1', JSON.stringify(Todos));
+// localStorage.removeItem('TODOS_V1');
