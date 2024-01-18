@@ -15,7 +15,6 @@ import { ModalTodoCreate } from '../Modals/ModalTodoCreate';
 function AppUI() {
 
   const {
-    // todos,
     loading,
     error,
     searchValue,
@@ -56,7 +55,6 @@ function AppUI() {
 
           {openModal && (
             <ModalTodoCreate >
-              {/* {(todos.text.length === 0) && <TodoError />} */}
               <TodoForm></TodoForm>
             </ModalTodoCreate>
           )}
