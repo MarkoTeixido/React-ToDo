@@ -1,6 +1,6 @@
 function TodoEmpty() {
   return (
-    <p>¡Crea tu primer TODO!</p>
+    <p className="text-center text-lg font-semibold">¡Crea tu primer TODO!</p>
   );
 }
 

@@ -1,6 +1,6 @@
 function TodoError() {
   return (
-    <p className="">Error...</p>
+    <p className="text-center text-lg font-semibold">Error...</p>
   );
 }
 

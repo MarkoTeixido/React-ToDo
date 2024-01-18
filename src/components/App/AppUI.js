@@ -5,6 +5,7 @@ import { TodoSearch } from '../TodoSearch';
 import { TodoLoading } from '../TodoLoading';
 import { TodoError } from '../TodoError';
 import { TodoEmpty } from '../TodoEmpty';
+import { TodoNoResult } from '../TodoNoResult';
 import { TodoList } from '../TodoList';
 import { TodoButtonCreate } from '../TodoButtonCreate';
 import { TodoContext } from '../../context/TodoContext';
@@ -16,6 +17,7 @@ function AppUI() {
   const {
     loading,
     error,
+    searchValue,
     searchedTodos,
     completeTodo,
     deleteTodo,
@@ -36,7 +38,8 @@ function AppUI() {
                 </>
               )}
               {error && <TodoError/>}
-              {(!loading && searchedTodos.length === 0) && <TodoEmpty />}
+              {(!loading && searchValue.length > 0 && searchedTodos.length === 0) && <TodoNoResult />}
+              {(!loading && searchValue.length === 0 && searchedTodos.length === 0) && <TodoEmpty />}
 
               {searchedTodos.map(Todos => (
                 <TodoItem
