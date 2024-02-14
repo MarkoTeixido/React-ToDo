@@ -1,75 +1,51 @@
-# Repositorio base del Curso de Introducción a React.js en Platzi
+# MarkoToDo
 
-¡Hola, Platzinauta!
+¡Bienvenido a MarkoToDo! 
 
-En este repositorio encontrarás el código de todas las clases del [Curso de Introducción a React.js](https://platzi.com/reactjs). Para empezar solo debes clonar este repositorio (`git clone`), instalar sus dependencias (`npm i`) y ejecutar la aplicación (`npm start`).
+Esta es una simple aplicación web que permite gestionar tus tareas diarias. Con una interfaz intuitiva y características útiles, te ayuda a mantener tus pendientes organizados y bajo control.
 
-La rama principal contiene el código con el que eempezamos el curso. En las demás ramas encontrarás el código de las siguientes clases y finalmente el deploy de la aplicación.
+![885shots_so](https://github.com/MarkoTeixido/react-todo/assets/89801822/5bc2d24e-ea5e-4c2a-aa99-e23ff83dded3)
+![577shots_so](https://github.com/MarkoTeixido/react-todo/assets/89801822/6ff99532-6d73-49ff-bcbc-89b2788b372d)
 
-¡Mucha suerte aprendiendo React! #NuncaParesDeAprender
 
-## Getting Started with Create React App
+## Stack de Tecnologías🎇
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Design:** Figma
 
-## Available Scripts
+**Front-End:** React, Tailwind
 
-In the project directory, you can run:
+## Comenzando 🚀
 
-### `npm start`
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Instalación
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> [!IMPORTANT]
+> Es necesario ya tener instalado (y actualizados en versiones) NodeJS, NPM y GIT en tu máquina.
 
-### `npm run build`
+Primero que nada, debes clonar o descargar (.zip) el repositorio del proyecto de la siguiente manera:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+  git clone https://github.com/MarkoTeixido/react-todo.git
+```
+Ahora que ya tienes el proyecto, tienes que abrirlo en tu editor de codigo y en la terminal del mismo, instalar las dependencias de la siguiente manera:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+  npm install
+```
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Para desplegar el proyecto de manera local:
 
-### `npm run build` fails to minify
+```bash
+  npm run start
+```
+O puede probarlo simplemente accediendo a este link: markoteixido.github.io/react-todo/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> [!NOTE]
+> Si experimenta fallas al acceder en github.io, puede ser que los servidores no esten funcionando muy bien debido a que es un servicio gratuito. Puede esperar o recargar el sitio.
+
+## Autores 📌
+
+_Este proyecto fue realizado en el curso de React en Platzi (prof: **JuanDC** - [https://github.com/juandc](https://github.com/juandc))_
